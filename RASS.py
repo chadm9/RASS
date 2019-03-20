@@ -223,7 +223,7 @@ def main():
         while len(atom_list) != 0:
             structure_list= SetCoordinates(structure_list, atom_list)
 
-	output = open(str(structures_written + 1) + '.RASS', 'w')
+        output = open(str(structures_written + 1) + '.RASS', 'w')
         output.write("%mem=4gb\n")
         output.write("# RB3LYP/LANL2DZ Opt=maxcycles=50\n")
         output.write("\nTitle\n\n")
